@@ -1,0 +1,21 @@
+<button (click)=" consultar()" class="btn btn-primary">Actualizar</button>
+<button (click)=" limpiar()" class="btn btn-secondary">Limpiar tabla</button>
+
+<table class="table table-hover" >
+    <thead>
+        <tr>
+        <th scope="col">Placa</th>
+        <th scope="col">Tipo de vehiculo</th>
+        <th scope="col">Registro de ingreso</th>
+        <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let val of tiquetes">
+            <th>{{val.vehiculo.placa}}</th>
+            <th>{{val.vehiculo.tipoVehiculo}}</th>
+            <th>{{val.fechaIngreso | date:'medium'}}</th>
+            <th><button (click)="salida(val.vehiculo.placa)" class="btn btn-danger">Salida del parqueadero</button></th>
+        </tr>
+    </tbody>
+</table>
