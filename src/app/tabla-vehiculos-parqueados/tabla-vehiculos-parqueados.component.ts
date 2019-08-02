@@ -23,6 +23,7 @@ export class TablaVehiculosParqueadosComponent implements OnInit {
   { }
 
   ngOnInit() {
+    this.consultar();
   }
 
   consultar(){
@@ -54,7 +55,6 @@ export class TablaVehiculosParqueadosComponent implements OnInit {
             this.toastr.error( error.error.mensaje, 'Error!' , {
               disableTimeOut:true
                }).onTap;
-
       });
   }
 

@@ -30,7 +30,7 @@ export class FormularioRegistroComponent implements OnInit {
 
           (resultado: Tiquete) => { 
               this.tiqueteIngreso = resultado;
-              this.toastr.success('El vehiculo con placa ' + resultado.vehiculo.placa + 'ingresó al parqueadero', 'Notificación' , {
+              this.toastr.success('El vehiculo con placa ' + resultado.vehiculo.placa + ' ingresó al parqueadero', 'Notificación' , {
               disableTimeOut:true
                }).onTap;
             }, 

@@ -1,7 +1,7 @@
-<button (click)=" consultar()" class="btn btn-primary">Actualizar</button>
+<button (click)=" consultar()" class="btn btn-primary" id="botonActualizar" #botonActualizar>Actualizar</button>
 <button (click)=" limpiar()" class="btn btn-secondary">Limpiar tabla</button>
 
-<table class="table table-hover" >
+<table class="table table-hover" id= "registros" #registros >
     <thead>
         <tr>
         <th scope="col">Placa</th>
@@ -15,7 +15,7 @@
             <th>{{val.vehiculo.placa}}</th>
             <th>{{val.vehiculo.tipoVehiculo}}</th>
             <th>{{val.fechaIngreso | date:'medium'}}</th>
-            <th><button (click)="salida(val.vehiculo.placa)" class="btn btn-danger">Salida del parqueadero</button></th>
+            <th><button (click)="salida(val.vehiculo.placa)" class="btn btn-danger" id="botonSalida" #botonSalida>Salida del parqueadero</button> </th>
         </tr>
     </tbody>
 </table>
