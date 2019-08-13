@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TablaVehiculosParqueadosComponent } from '../tabla-vehiculos-parqueados/tabla-vehiculos-parqueados.component';
 import { Router } from '@angular/router';
 import { Vehiculo } from '../modelo/Vehiculo';
 import { Tiquete } from '../modelo/Tiquete';
